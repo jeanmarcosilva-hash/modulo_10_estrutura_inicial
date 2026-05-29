@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container container-flex">
             <h1>EBAC Motors</h1>
             <div class="menu-hamburguer">
                 <span></span>
@@ -48,6 +48,54 @@
         <img src="./images/slide2.png" alt="carro da BMW">
         <img src="./images/slide3.png" alt="Carro da Ford">
     </div>
+<section id="sobre-a-loja">
+    <div class="container container-flex">
+        <img src="./images/loja.jpg" alt="Imagen da loja EBAc Motors">
+        <div>
+            <h2>Sobre a EBAC </h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi aspernatur explicabo labore illum, doloremque culpa commodi vero quisquam repudiandae vitae exercitationem iste neque consectetur voluptate cum perspiciatis. Suscipit, eos reprehenderit.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam qui quo iusto consequuntur, porro pariatur, fugiat hic expedita illum culpa saepe perferendis nam cum amet. Ullam eos voluptas quae enim!</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Em destaque</h2>
+        <ul class="container-flex lista-veiculos">
+            <li>
+                <img src="./images/carro-bmw.png" alt="">
+                <h3>Carro BMW</h3>
+                <p>
+                    Cambio automatico. 4 portas, vidros e travas eletricas
+                </p>
+                <strong>R$ 75.000,00</strong>
+                    <button type="button">Tenho Interesse</button>
+            </li>
+             <li>
+                <img src="./images/carro-bmw.png" alt="">
+                <h3>Carro BMW</h3>
+                <p>
+                    Cambio automatico. 4 portas, vidros e travas eletricas
+                </p>
+                <strong>R$ 75.000,00</strong>
+                    <button type="button">Tenho Interesse</button>
+            </li>
+             <li>
+                <img src="./images/carro-bmw.png" alt="">
+                <h3>Carro BMW</h3>
+                <p>
+                    Cambio automatico. 4 portas, vidros e travas eletricas
+                </p>
+                <strong>R$ 75.000,00</strong>
+                    <button type="button">Tenho Interesse</button>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -57,6 +105,9 @@
         $('#carousel-imagens').slick({
             autoplay:true,
             arrows:false
+        });
+        $('.menu-hamburguer').click(function(){
+            $('nav').slideToggle();
         })
     })
 </script>
